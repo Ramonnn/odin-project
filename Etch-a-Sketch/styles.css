@@ -1,0 +1,15 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-self: center;
+	width: 960px;
+	heigth: 960px;
+	aspect-ratio: 1 / 1;
+}
+
+.reset-button {
+	display: flex;
+	justify-self: center;
+	padding: 1em;
+	margin: 1em;
+}
