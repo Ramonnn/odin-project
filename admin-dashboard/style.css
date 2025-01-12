@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'Roboto Download';
+	src: url('./Roboto.ttf') format('truetype');
+}
+
+.container {
+	font-family: 'Roboto Download';
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-template-rows: auto 1fr;
+	grid-template-areas:
+		"side top"
+		"side main";
+}
+
+.sidebar {
+	grid-area: side;
+	display: flex;
+	flex-direction: column;
+	background: #1992D4;
+	color: white;
+	font-size: 15px;
+	align-content: left;
+	text-justify: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.dashboard-title {
+	display: flex;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	font-size: 2rem;
+}
+
+.dashboard-title img {
+	width: 25%;
+	filter: invert();
+}
+
+.sidebar button {
+	display: flex;
+	border: none;
+	background: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	align-content: left;
+	padding-top: 10%;
+}
+
+.sidebar button>img {
+	width: 20px;
+	filter: invert();
+	padding-right: 7%;
+}
+
+.header {
+	grid-area: top;
+}
+
+.main {
+	grid-area: main;
+}
