@@ -9,7 +9,6 @@
 	width: 100vw;
 	display: grid;
 	grid-template-columns: 1fr 5fr;
-	grid-template-rows: auto 1fr;
 	grid-template-areas:
 		"side top"
 		"side main";
@@ -25,7 +24,6 @@
 	align-content: left;
 	text-justify: left;
 	padding-left: 15px;
-	padding-right: 15px;
 }
 
 .dashboard-title {
@@ -59,14 +57,12 @@
 }
 
 .header {
-	grid-area: top;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 	align-items: left;
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 	z-index: 2;
-
 }
 
 .searchbar {
@@ -77,11 +73,48 @@
 	padding: 15px;
 	align-items: left;
 	justify-items: left;
-	margin-left: 25px;
-	margin-top: 25px;
+	padding-left: 25px;
+	padding-top: 25px;
 }
 
-.searchbar img {
+.details {
+	display: flex;
+	grid-auto-flow: column;
+	grid-template-columns: 24px;
+	gap: 20px;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 50px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.greeting {
+	display: flex;
+	grid-auto-flow: column;
+	grid-template-columns: 24px;
+	gap: 20px;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 50px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.header-buttons {
+	display: flex;
+	grid-auto-flow: column;
+	grid-template-columns: 24px;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 20px;
+	padding-right: 50px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.searchbar img,
+.details img {
 	width: 25px;
 }
 
@@ -106,7 +139,6 @@
 	color: white;
 	font-weight: bold;
 	font-size: 15px;
-	margin: 15px;
 }
 
 .main {
